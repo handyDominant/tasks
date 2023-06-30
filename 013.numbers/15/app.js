@@ -6,7 +6,7 @@ let a = prompt('Введите свой возраст!');
 
 if (a > 0 && a < 19){
     console.log('детство')
-}if (a > 19 && a < 41){
+}else if (a > 19 && a < 41){
     console.log('молодость')
 }else if (a > 41 && a < 100){
     console.log('зрелость')
