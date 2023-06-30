@@ -4,5 +4,5 @@
 let a = prompt('Введите значение!');
 
 if (a == 0) console.log('Ноль');
-if (a < 0) console.log('Отрицательное');
-if (a > 0) console.log('Положительное');
+else if (a < 0) console.log('Отрицательное');
+else if (a > 0) console.log('Положительное');
