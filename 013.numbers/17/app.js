@@ -8,5 +8,5 @@ let b = prompt('Введите число B!')
 if (a % b == 0) {
     console.log('Делится')
 } else if (a % b != 0) {
-    console.log('Делится с остатком: ' + a % b)
+    console.log('Делится с остатком и остаток от деления: ' + a % b)
 }
