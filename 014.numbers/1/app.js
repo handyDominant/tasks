@@ -1,17 +1,38 @@
-// 1. Найти максимальное число из 2 введенных (2 способа)
+// Пользователь вводит число от 1 до 7, соответствующее дню недели. Необходимо
+// вывести день для введенного числа.
+// 1 -> Понедельник
 
+let a = prompt('Введите значение от 1 до 7');
 
-let a = prompt('Введите первое значение: ');
-let b = prompt('Введите второе значение: ');
+switch (a) {
+    case 1: 
+        console.log('Понедельник');
+        break;
 
-if (a > b) {
-    console.log(a);
-} else if (b > a) {
-    console.log(b);
-} else {
-    console.log("Числа равны.");
+    case 2: 
+        console.log('Вторник');
+        break;
+
+    case 3: 
+        console.log('Среда');
+        break;
+
+    case 4: 
+        console.log('Четверг');
+        break;
+
+    case 5: 
+        console.log('Пятница');
+        break;  
+        
+    case 6: 
+        console.log('Суббота');
+        break; 
+    
+    case 7: 
+        console.log('Воскресенье');
+        break;   
+        
+    default:
+        console.log("Некорректный ввод");   
 }
-
-let maxNumber = Math.max(a, b);
-
-console.log("Максимальное число: " + maxNumber);
