@@ -9,7 +9,7 @@ let userInput = prompt('Введите значение').split('');
 var positivity = userInput.length >= 0 ? "положительное" : "отрицательное";
 
 
-console.log('Число: ' + Number(userInput.length) + ' Оно: ' + positivity);
+console.log('Число: ' + Number(userInput.length) + ', Оно: ' + positivity);
 
 
 
