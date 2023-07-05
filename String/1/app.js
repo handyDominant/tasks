@@ -4,14 +4,31 @@
 // ‘hschool’ => [‘h’, ‘s’, ‘c’, ‘h’, ‘o’, ‘o’, ‘l’]
 
 
-
+//   берем значения  у польщователя
 const inputUser = prompt('Введите значение, пожалуйста: ');
-let valueUser = '';
 
-if (inputUser === Number(inputUser)) {
-    console.log('')
 
+
+
+//   проверяем число: четное или нет
+if (!isNaN(inputUser)) {
+    let number = parseInt(inputString);
+    console.log("Это число.");
+
+    if (Number(number) % 2 == 0) {
+        console.log('Это число: ${inputUser}, оно четное');
+
+    } else if (Number(number) % 2 != 0) {
+        console.log('Это число: ${inputUser}, оно не четное');
+    };
+
+    //  проверяем строку
 } else if (inputUser === String(inputUser)) {
-    valueUser = inputUser.split('')
-    console.log(valueUser)
+    console.log(inputUser.split(''));
+
+} else {
+    console.log('Некоректный ввод, пожалуйста, нажмите F5.');
 }
+
+
+
