@@ -9,7 +9,7 @@ let inputUser = 'введите, пожалуйста, значение: ';
 if (inputUser === !String(inputUser)){
     console.log('Ошибка ввода');
 } else {
-    console.log(inputUser[0].toUpperCase() + inputUser.slice(1));
+    console.log(inputUser[0].toUpperCase() + inputUser.slice(1).trim());
 }
 
 
