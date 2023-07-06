@@ -6,8 +6,8 @@ let inputUser = 'Введите, пожалуйста, значение: ';
 // let inputUser = parseFloat(9.0);
 
 console.log(inputUser === parseFloat(inputUser) && Number(inputUser) ? 
-console.log('ошибка ввода') : 
-console.log(inputUser.toLowerCase().trim()));
+            console.log('ошибка ввода') : 
+            console.log(inputUser.toLowerCase().trim()));
 
 
 
