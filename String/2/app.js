@@ -3,5 +3,5 @@
 
 let a = ' Full StaCK DevELoper '
 
-console.log(a.split(' '))
+console.log(a.trim().split(' '))
 
