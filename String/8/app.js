@@ -3,6 +3,6 @@
 
 let strUser = 'aaa bbb ccc';
 
-console.log(strUser.split(' '));
+console.log(strUser.split(' ')[0+2] + ' ' + strUser[0].repeat(3));
 
 
