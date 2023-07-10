@@ -5,3 +5,17 @@
 
 
 
+let valueInput = 'Have a good Day?'.split();
+
+console.log(valueInput);
+
+//  for ([инициализация счетчика]; [условие]; [изменение счетчика]){
+// действия
+//  }
+
+var b = 'empty';
+for (let i = 0; i < 3; i++){
+    let b = valueInput[i]
+    console.log(b)
+}
+
