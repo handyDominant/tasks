@@ -15,7 +15,7 @@
 // действия
 //  }
 
-var valueInput = 'Have a good Day?'.split();
+var valueInput = 'Have a good Day?';
 
 
 for (let i = 1; i < 3; i++){
