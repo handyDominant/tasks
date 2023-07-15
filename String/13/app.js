@@ -2,4 +2,8 @@
 // 'xx.xx.xxxx.
 
 
+let inputUser = 'xxxx-xx-xx'.split('-');
 
+inputUser.reverse();
+
+console.log(inputUser.join().replaceAll(',', '.'));

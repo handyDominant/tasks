@@ -15,13 +15,15 @@
 // действия
 //  }
 
-var valueInput = 'Have a good Day?'.split(' ');
+var valueInput = 'Have a good Day?'.trim().split(' ');
 
 
 
 for (let i = 0; i < valueInput.length; i++){
     var a = ' ';
-    if (valueInput[i] === valueInput[1]) continue 
+    if (valueInput[i] === valueInput[1])
+        console.log(valueInput.replace(valueInput[i], ''))
+
     else if (valueInput[i] === valueInput[2]) continue 
         var a =+ valueInput[i];
     } 
