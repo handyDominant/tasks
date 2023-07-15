@@ -2,4 +2,6 @@
 // заканчивается подстрокой .com или .ru, то вывести true, в противном случае false
 
 
+let inputUrl = 'https://www.kufar.ru/';
 
+console.log(inputUrl.includes('.ru', '/'))

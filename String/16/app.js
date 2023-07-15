@@ -5,3 +5,11 @@
 // chris alan => false
 
 
+let inputUser = 'Chris Alan'.split(' ');
+
+
+if (inputUser[0][0] === inputUser[0][0].toUpperCase() && inputUser[1][0] === inputUser[1][0].toUpperCase()){
+    console.log('true');
+} else{
+    console.log('false');
+}

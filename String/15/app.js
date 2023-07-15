@@ -2,4 +2,6 @@
 // строку 'я+учу+javascript+!.
 
 
+let inputErrey = ['я', 'учу', 'javascript', '!'];
 
+console.log(inputErrey.join().replaceAll(',', '+'));
