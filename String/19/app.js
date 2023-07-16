@@ -4,5 +4,5 @@
 
 let inputUser = 'это текст раздел пробелом'.split(' ');
 
-console.log(inputUser);
+
 
