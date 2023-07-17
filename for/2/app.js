@@ -1,7 +1,7 @@
-// 2. Преобразовать строку ‘ Full StaCK DevELoper ’ в массив вида [‘full, ‘stack’,
-// ‘developer’]
+// 2. Дан статичный массив элементов. С помощью цикла for найдите произведение
+// всех элементов массива
 
-let a = ' Full StaCK DevELoper '
+let inputUser = [1,2,3,4];
 
-console.log(a.trim().split(' '))
+console.log(inputUser);
 
