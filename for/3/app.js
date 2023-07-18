@@ -1,22 +1,18 @@
-// 3. Ввести строку. Проверить на isNaN. Если число, то ошибка ввода. Если это строка
-// то узнать какая у нее длина. Привести к одному регистру, убрать лишние пробелы
+// 3. На вход подается число. Необходимо вывести все числа от 1 до введенного числа
+// кратные 3.
 
-let inputUser = 'Введите, пожалуйста, значение: ';
-// let inputUser = Number(9);
-// let inputUser = parseFloat(9.0);
-
-console.log(inputUser === parseFloat(inputUser) && Number(inputUser) ? 
-            console.log('ошибка ввода') : 
-            console.log(inputUser.toLowerCase().trim()));
+let inputUser = 'Введите текст или числа';
 
 
+if (inputUser === Number.inputUser){
+        for (i = 0; i < inputUser.length(); i++){
+            if (inputUser == 3){
+                console.log(inputUser)
+        }
+    }
+    
+}
 
-// if (inputUser === String(inputUser)){
-//     console.log(inputUser.toLowerCase().trim());
-
-// }else if (inputUser === Number(inputUser)){
-//     console.log('Ошибка ввода');
-// } 
 
 
 
