@@ -5,12 +5,12 @@ let inputUser  = [10, 20, 30, 50, 235, 3000].toString().split(',');
 let helpFileInputUser = [];
 let itemsInputUser = [];
 
-for(helpFileInputUser of inputUser){
-   if(helpFileInputUser[0] === '1' || 
-      helpFileInputUser[0] === '2' || 
-      helpFileInputUser[0] === '5'){
+for(helpFileInputUser of inputUser){   // перебираем массив
+   if(helpFileInputUser[0] === '1' ||  // проверяем на 1
+      helpFileInputUser[0] === '2' ||  // проверяем на 2
+      helpFileInputUser[0] === '5'){   // проверяем на 5
 
-         itemsInputUser.push(helpFileInputUser);
+         itemsInputUser.push(helpFileInputUser);   // добавляем результат в переменную
    }
 } console.log(itemsInputUser)
 
