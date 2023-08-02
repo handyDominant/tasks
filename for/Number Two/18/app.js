@@ -2,12 +2,13 @@
 // массива. Напишите код заполнения массива методом prompt.
 
 
-let inputUser = 5;
+let inputUser = prompt('Введите число');
 let itemsInput = [];
-var inputUsersItemsErray = 'Введите значение!';
+
 
 
 for( i = 0; i < inputUser; i++){
+    var inputUsersItemsErray = prompt('Введите значение!');
     itemsInput.push(inputUsersItemsErray);
 }
 console.log(itemsInput);
