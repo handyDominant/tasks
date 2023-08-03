@@ -3,18 +3,19 @@
 // массива равна 0, то вывести ‘Массив пуст’. filter
 
 let itemsUser = [];
+
 for (i=0; i<5; i++){
-    let inputUser = prompt('Введите значение');
-    if(!isNaN(inputUser){
+    let inputUser = ('Введите, пожалуйста, значение!');
+    if(!isNaN(parseFloat(inputUser) && isFinite(inputUser))){
         itemsUser.push(inputUser);
     }
-}if (itemsUser === []){
-    console.log('Массив пуст')
-}else{
-    console.log(itemsUser);
 }
 
+let numberErray = itemsUser.filter(function(items){
+    return typeof items === 'number';
+});
 
+console.log(numberErray.length === 0 ? 'массив пуст': numberErray);
 
 
 
