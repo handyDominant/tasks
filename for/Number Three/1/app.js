@@ -4,18 +4,25 @@
 
 let itemsUser = [];
 
-for (i=0; i<5; i++){
-    let inputUser = ('Введите, пожалуйста, значение!');
-    if(!isNaN(parseFloat(inputUser) && isFinite(inputUser))){
+for (i = 0; i < 5; i++) {
+    let inputUser = prompt('Введите, пожалуйста, значение!');
+    if (!isNaN(parseFloat(inputUser) && isFinite(inputUser))) {
         itemsUser.push(inputUser);
     }
 }
+// Так как в условии уканазы значения цифрами и с плавующей точкой - я использовал проверку
+// на наличие чиcла с плавующей точкой: parseFloat(inputUser)и на бесконечность число: isFinite(inputUser) .
 
-let numberErray = itemsUser.filter(function(items){
-    return typeof items === 'number';
-});
+let numberErray = itemsUser.filter(items =>  typeof items === 'number');
+// тут я впервые попробовал освоить стелочную функцию, т.к. принимался один аргумент
+// я понимал, что стрелочная функция не имеет аргументов. Также, я понимаю, что в 
+// стрелочной функции нет возможности использования this - использования глобальной переменной.
+// This можно понимать как строковой функцией, которая принимает фнутри себя значения, игнорирую
+// глобальные. 
 
-console.log(numberErray.length === 0 ? 'массив пуст': numberErray);
+console.log(numberErray.length === 0 ? 'массив пуст' : numberErray);
+// тут я использовал тенарный оператор для сокразения кода для того, чтобы была возможность
+// попрактиковаться с тенарным оператором.
 
 
 
