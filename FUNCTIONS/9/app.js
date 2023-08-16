@@ -1,8 +1,27 @@
-// 9. На вход программе подается переменная date, в котрой лежит дата в формате
-// 'xxxx-xx-xx'. Преобразуйте эту дату в формат 'xx/xx/xxxx’. (reverse)
+// 9. На входе массив. Реализуйте 2 функции. Первая для проверки, что в массиве
+// только числа. Вторая для получения массива с удвоенными значенями каждого
+// элемента. Если результат функции проверки – true, то вызывать новую функцию,
+// возвращающую массив с удвоенными элементами
 
-let userInput = ('xxxx-xx-xx'.replaceAll('-', '/').split('/'));
 
-userInput.reverse()
 
-console.log(userInput.join().replaceAll(',', '/'));
+let inputArray = [1, 2, 3, 4, 5];
+
+function checkNumber(array) {
+    return array.every(function(item) {
+        return typeof item === 'number';
+    });
+}
+
+if (checkNumber(inputArray)) {
+    function doubleArray(array) {
+        return array.map(function(item) {
+            return item * 2;
+        });
+    }
+
+    let doubledResult = doubleArray(inputArray);
+    console.log(doubledResult);
+} else {
+    console.log("Массив не состоит только из чисел.");
+}
