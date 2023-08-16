@@ -19,6 +19,6 @@ function transformationWords(inputWords) {
     return result.join(' ');
 }
 
-let inputWords = 'sdfsd sdfdsf sdfsdf';
+let inputWords = 'happy new year';
 console.log(transformationWords(inputWords));
 

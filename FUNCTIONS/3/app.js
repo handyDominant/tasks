@@ -1,22 +1,20 @@
-// 3. На вход подается число. Необходимо вывести все числа от 1 до введенного числа
-// кратные 3.
+// 3. Напишите функцию, которая принимает строку в маленьком регистре и
+// возаращает строку, где каждое слово начинается с большого регистра
+// hschool company -> Hschool Company
 
-let inputUser = 3030202030;
-var logInformation = [];
+function transformationWords(inputWords) {
+    let words = inputWords.split(' ');
+    let result = [];
 
-// Преобразуем inputUser в строку, чтобы можно было обращаться к его цифрам
-inputUser = inputUser.toString();
-
-for (let i = 0; i < inputUser.length; i++) {
-    if (inputUser[i] === '3') {
-        logInformation.push(inputUser[i]);
+    for (let i = 0; i < words.length; i++) {
+        result.push(words[i][0].toUpperCase() + words[i].substring(1));
     }
+
+    return result.join(' ');
 }
 
-
-console.log(logInformation.join());
-
-
+let inputWords = 'hschool company';
+console.log(transformationWords(inputWords)); // "Hschool Company"
 
 
 

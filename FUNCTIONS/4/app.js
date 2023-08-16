@@ -1,11 +1,19 @@
-// 4. Дан статичный массив с элементами и число вводимое с клавиатуры. С помощью
-// цикла for и оператора if проверьте есть ли в массиве введенное число. Если есть,
-// то остановите выполнение цикла. Если нет, то найдите среднее арифметическое
-// всех чисел
+// 4. Напишите функцию, которая принимает статичный массив строк. Необходимо
+// отфильтровать значения и оставить только те, где длина строк до 2 символов.
+// [“by”, “belarus”, “de”, “ru”, “germany”] -> [“by”, “de”, “ru”]
 
-let inputUser = '1231231';
 
-console.log(inputUser);
+function transformationWords(inputUser) {
+    let words = inputUser.filter(function(word) {
+        return word.length <= 2;
+    });
+    return words;
+}
+
+let inputUser = ['by', 'belarus', 'de', 'ru', 'germany'];
+
+console.log(transformationWords(inputUser));
+
 
 
 
