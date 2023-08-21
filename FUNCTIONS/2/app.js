@@ -4,8 +4,8 @@
 // happy new year -> happy NEW year
 
 
-function transformationWords(inputWords) {
-    let words = inputWords.split(' ');
+function transformationWords(inputWords_) {
+    let words = inputWords_.split(' ');
     let result = [];
 
     for (let i = 0; i < words.length; i++) {
@@ -19,6 +19,6 @@ function transformationWords(inputWords) {
     return result.join(' ');
 }
 
-let inputWords = 'happy new year';
-console.log(transformationWords(inputWords));
+let inputWords_ = 'happy new year';
+console.log(transformationWords(inputWords_));
 
