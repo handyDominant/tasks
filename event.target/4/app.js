@@ -1,20 +1,24 @@
-// 4. Необходимо отобразить кнопку с надписью «Нажми на меня» и пустой инпут. По
-// клику на кнопку вызвать alert и отобразить сообщение из значения инпута.
-// Проверки на ввод. Обработать ошибки
+// Добавьте картинку на страницу. При наведении на картинку мышкой необходимо
+// ее изменять на другую картинку. Но как только мышка снова отходит в сторону, то
+// возвращается первая картинка
 
 
 const btn = document.querySelector('button');
+const div = document.querySelector('div');
+let arr = [];
 
 btn.addEventListener('click', function () {
     try {
         const inp = document.querySelector('input');
-        if (!inp.value.trim()) throw new Error('empty');
-        alert(inp.value)
-    }
-    catch (error) {
-        alert(error.message)
+        arr.push(inp.value);
+
+        div.innerHTML = arr;
+
+    } catch (error) {
+        alert(error.message);
     }
 })
+
 
 
 
