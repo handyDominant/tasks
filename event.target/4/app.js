@@ -8,14 +8,23 @@ const div = document.querySelector('div');
 let arr = [];
 
 btn.addEventListener('click', function () {
+    const inp = document.querySelector('input');
     try {
-        const inp = document.querySelector('input');
+
+        if (!inp.value.trim()) throw new Error('Empty');
+        if (isNaN(inp.value)) throw new Error('is letter');
+
         arr.push(inp.value);
 
         div.innerHTML = arr;
 
+        inp.value = '';
+
+        inp.style = 'border: 1px solid black';
+
     } catch (error) {
         alert(error.message);
+        inp.style = 'border: 1px solid red';
     }
 })
 
