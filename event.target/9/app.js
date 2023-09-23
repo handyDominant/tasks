@@ -1,8 +1,15 @@
-// 9. На вход программе подается переменная date, в котрой лежит дата в формате
-// 'xxxx-xx-xx'. Преобразуйте эту дату в формат 'xx/xx/xxxx’. (reverse)
+// У вас есть кнопка. После каждого нажатия менять background.
 
-let userInput = ('xxxx-xx-xx'.replaceAll('-', '/').split('/'));
+const button = document.getElementById('changeBackgroundButton');
+const content = document.getElementById('content');
+const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff']; // Массив цветов
 
-userInput.reverse()
+let currentColorIndex = 0;
 
-console.log(userInput.join().replaceAll(',', '/'));
+button.addEventListener('click', () => {
+  // Изменяем фоновый цвет на следующий цвет из массива
+  content.style.backgroundColor = colors[currentColorIndex];
+  
+  // Увеличиваем индекс текущего цвета
+  currentColorIndex = (currentColorIndex + 1);
+});
